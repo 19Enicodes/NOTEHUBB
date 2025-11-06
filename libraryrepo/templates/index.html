@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteHub</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">📔Note<span>Hub</span></div>
+      <nav class="nav-buttons">
+        {% if user.is_authenticated %}
+        <span class="welcome-user">Welcome, {{ user.username }}</span>
+        <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}" class="logout-btn">Login</a>
+        <a href="{% url 'signup' %}" class="logout-btn">Signup</a>
+        {% endif %}
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <h1 class="welcome-message">
+        {% if user.is_authenticated %} Hi {{ user.username }}, here are your
+        materials: {% else %} Welcome, Guest {% endif %}
+      </h1>
+    </main>
+
+    <section class="search-section">
+      <form method="GET" action="">
+        <input
+          type="text"
+          name="q"
+          id="search-input"
+          placeholder="Search materials"
+          value="{{ request.GET.q }}"
+        />
+        <button type="submit">Search</button>
+        {% if request.GET.q %}
+        <a href="{% url 'dashboard' %}" class="clear-search">Clear</a>
+        {% endif %}
+      </form>
+    </section>
+
+    <section id="materials-section">
+      <h2>Available Materials</h2>
+      <div class="grid-container" id="materials-grid">
+        {% for material in see %}
+        <div class="material-card">
+          <h3>{{ material.title }}</h3>
+          <p><strong>Author:</strong> {{ material.author }}</p>
+          <p><strong>Course:</strong> {{ material.coursecode }}</p>
+          <a
+            href="{{ material.file.url }}"
+            target="_blank"
+            download
+            class="download-btn"
+            >Download</a
+          >
+        </div>
+        {% empty %}
+        <p>No materials found.</p>
+        {% endfor %}
+      </div>
+      <div style="text-align: center; margin: 20px 0">
+        <button id="see-more-btn" class="download-btn">See More</button>
+      </div>
+    </section>
+
+    <script>
+      const seeMoreBtn = document.getElementById("see-more-btn");
+      const hiddenItems = document.querySelectorAll(
+        '.grid-item[style*="display:none"]'
+      );
+
+      seeMoreBtn.addEventListener("click", () => {
+        hiddenItems.forEach((item) => (item.style.display = "block"));
+        seeMoreBtn.style.display = "none"; // hide button after click
+      });
+    </script>
+  </body>
+</html>

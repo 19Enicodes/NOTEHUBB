@@ -1,0 +1,826 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "libraryrepo",
+        "model": "create_materials"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "libraryrepo",
+        "model": "creatematerials"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "17xnp9u6lytun83164zf2rusbsj9oj6g",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWlmSlscl-45QzPtDIIaSCisjHdXEha6_e-9_zKJt3VIW9UljWIuBs3pd8tcHjrtQO483WZb5mldxmx3xR602m4WfV4P9-9g4Dp86xacJ-8DgwNCQRcoBs0RfKT-3BQEZgwksfGugEoLOQqTEvZZXWjN-wOhajbZ:1v5Ya0:_c5nSBFstREJVlhw4WNVR-7CUII1r6Z_WqNFU475xpc",
+        "expire_date": "2025-10-19T23:55:52.811Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "38o1snn7uqlqvb3dj96du4b2swgzpe5r",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWlmSlscl-45QzPtDIIaSCisjHdXEha6_e-9_zKJt3VIW9UljWIuBs3pd8tcHjrtQO483WZb5mldxmx3xR602m4WfV4P9-9g4Dp86xacJ-8DgwNCQRcoBs0RfKT-3BQEZgwksfGugEoLOQqTEvZZXWjN-wOhajbZ:1uMQsK:5Jn8y3a_JQ8cVRmJ2J_zN2dICiHyVR1_ail1q2GbLVA",
+        "expire_date": "2025-06-17T12:36:16.958Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jtdrhjw3sr39r1d0xf2h7688wnlwkx25",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWlmSlscl-45QzPtDIIaSCisjHdXEha6_e-9_zKJt3VIW9UljWIuBs3pd8tcHjrtQO483WZb5mldxmx3xR602m4WfV4P9-9g4Dp86xacJ-8DgwNCQRcoBs0RfKT-3BQEZgwksfGugEoLOQqTEvZZXWjN-wOhajbZ:1uMxjb:E5eeqmQXtDUUvnDhYD-Rl2vW4S96q46uS8YNE_hllxA",
+        "expire_date": "2025-06-18T23:41:27.292Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ri1sr3lcatak0jytsnmkrhilrhezxzz3",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWlmSlscl-45QzPtDIIaSCisjHdXEha6_e-9_zKJt3VIW9UljWIuBs3pd8tcHjrtQO483WZb5mldxmx3xR602m4WfV4P9-9g4Dp86xacJ-8DgwNCQRcoBs0RfKT-3BQEZgwksfGugEoLOQqTEvZZXWjN-wOhajbZ:1v18Fm:54tNS9GkgmuIA2lqxiNxtjRTN6afO3QuSarpQ26SgLo",
+        "expire_date": "2025-10-07T19:00:42.525Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y5qvd067hj2m2bykqpqlku4167tbsz2x",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWlmSlscl-45QzPtDIIaSCisjHdXEha6_e-9_zKJt3VIW9UljWIuBs3pd8tcHjrtQO483WZb5mldxmx3xR602m4WfV4P9-9g4Dp86xacJ-8DgwNCQRcoBs0RfKT-3BQEZgwksfGugEoLOQqTEvZZXWjN-wOhajbZ:1uMmpC:6Y74otDpAiE76i98wsla3-hyDH2U_1JoDz4tJAS3tg0",
+        "expire_date": "2025-06-18T12:02:30.891Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add create_materials",
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "codename": "add_create_materials"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change create_materials",
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "codename": "change_create_materials"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete create_materials",
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "codename": "delete_create_materials"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view create_materials",
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "codename": "view_create_materials"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add create materials",
+        "content_type": [
+            "libraryrepo",
+            "creatematerials"
+        ],
+        "codename": "add_creatematerials"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change create materials",
+        "content_type": [
+            "libraryrepo",
+            "creatematerials"
+        ],
+        "codename": "change_creatematerials"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete create materials",
+        "content_type": [
+            "libraryrepo",
+            "creatematerials"
+        ],
+        "codename": "delete_creatematerials"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view create materials",
+        "content_type": [
+            "libraryrepo",
+            "creatematerials"
+        ],
+        "codename": "view_creatematerials"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$e5c3KqeCuP6XtBkySLFdOG$88ZINVrzdB5ul15owLFJ1mZVnZQqYc7wUigxmbUTHMg=",
+        "last_login": "2025-10-05T23:55:52.800Z",
+        "is_superuser": true,
+        "username": "taiwo",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-06-03T12:35:14.867Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$YZiO7X5DTfEoZLzXEr9esX$KgYtx4nwaIWI/Jd01chVbCw/dxik2zCifSwL6Rzh7vQ=",
+        "last_login": "2025-10-04T14:15:14.017Z",
+        "is_superuser": true,
+        "username": "ENI",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-10-04T14:15:12.027Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-06-03T12:38:02.862Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "1",
+        "object_repr": "CSC 221",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-06-03T12:38:13.892Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "2",
+        "object_repr": "csc 224",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-06-04T14:08:46.093Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "3",
+        "object_repr": "Introduction to Java",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-06-04T14:12:50.836Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "4",
+        "object_repr": "Physics",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-06-04T14:18:50.303Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "5",
+        "object_repr": "lagos and environs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-06-04T14:19:29.216Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "2",
+        "object_repr": "csc 224",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-06-04T14:19:29.216Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "1",
+        "object_repr": "CSC 221",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-06-04T14:21:59.868Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "6",
+        "object_repr": "Intro to programming",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-06-04T23:43:24.747Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "6",
+        "object_repr": "CSC 113",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Coursecode\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-06-08T14:44:02.997Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "7",
+        "object_repr": "COMPUTER HARDWARE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-06-08T14:46:28.616Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "8",
+        "object_repr": "PAST QUESTIONS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-06-08T14:49:22.035Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "6",
+        "object_repr": "CSC 113",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-06-08T14:49:22.036Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "5",
+        "object_repr": "lagos and environs",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-06-08T14:49:22.036Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "4",
+        "object_repr": "Physics",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-06-08T14:49:22.036Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "3",
+        "object_repr": "Introduction to Java",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-06-08T14:50:48.279Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "9",
+        "object_repr": "INTO TO PHYSICS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-06-08T14:52:03.761Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "10",
+        "object_repr": "HYDROSTATICS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-06-08T14:53:28.241Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "11",
+        "object_repr": "HL PROGRAMMING",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-06-08T14:55:36.687Z",
+        "user": [
+            "taiwo"
+        ],
+        "content_type": [
+            "libraryrepo",
+            "create_materials"
+        ],
+        "object_id": "12",
+        "object_repr": "STATISTICS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
